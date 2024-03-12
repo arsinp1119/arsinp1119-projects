@@ -1,0 +1,12 @@
+<project name="LBS_MCM" default="default">
+	<target name="default">
+		<jar destfile="RabbitMQClient.jar">
+			<zipfileset dir="bin" prefix=""/>
+			<manifest>				
+				<attribute name="Class-Path" value="arslogger.jar obcsclient.jar obcsclientfrmk.jar mysql-connector-java-5.0.4-bin.jar rabbitmq-client.jar RabbitMQClient.jar"/>
+				<attribute name="Version" value="4.1.91.795"/>
+				<attribute name="Date" value="23-11-2017"/>
+			</manifest>
+		</jar>
+	</target>
+</project>
